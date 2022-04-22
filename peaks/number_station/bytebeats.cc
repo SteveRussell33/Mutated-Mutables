@@ -46,6 +46,7 @@ void ByteBeats::Init() {
   p0_ = 32678;
   p1_ = 32678;
   p2_ = 0;
+  t_ = 0;  
   equation_index_ = 0;
 }
 
