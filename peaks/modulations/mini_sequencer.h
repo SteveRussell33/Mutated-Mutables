@@ -104,7 +104,7 @@ class MiniSequencer {
  private:
   uint8_t num_steps_;
   uint8_t step_;
-  int16_t steps_[kMaxNumSteps];
+  int16_t steps_[kMaxNumSteps] = {};
 
   bool reset_at_next_clock_;
 

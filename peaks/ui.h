@@ -156,11 +156,11 @@ class Ui {
   void SetFunction(uint8_t index, Function f);
   void SaveState();
 
-  int32_t adc_lp_[kNumAdcChannels];
-  int32_t adc_value_[kNumAdcChannels];
-  int32_t adc_threshold_[kNumAdcChannels];
-  uint32_t press_time_[kNumSwitches];
-  bool panel_gate_control_[2];
+  int32_t adc_lp_[kNumAdcChannels] = {};
+  int32_t adc_value_[kNumAdcChannels] = {};
+  int32_t adc_threshold_[kNumAdcChannels] = {};
+  uint32_t press_time_[kNumSwitches] = {};
+  bool panel_gate_control_[2] = {};
   static const ProcessorFunction function_table_[FUNCTION_LAST][2];
   
   stmlib::EventQueue<32> queue_;
@@ -170,19 +170,19 @@ class Ui {
   Adc adc_;
   
   EditMode edit_mode_;
-  Function function_[2];
+  Function function_[2] = {};
   Settings settings_;
   uint16_t version_token_;
   
-  int16_t brightness_[2];
+  int16_t brightness_[2] = {};
   
   uint8_t panel_gate_state_;
   
   uint8_t double_press_counter_;
-  uint8_t pot_value_[8];
+  uint8_t pot_value_[8] = {};
   
   bool snap_mode_;
-  bool snapped_[kNumAdcChannels];
+  bool snapped_[kNumAdcChannels] = {};
   
   CalibrationData* calibration_data_;
   bool calibrating_;

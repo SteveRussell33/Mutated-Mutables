@@ -98,7 +98,7 @@ class HighHat {
   // Svf vca_coloration_;
   Excitation vca_envelope_;
 
-  uint32_t phase_[6];
+  uint32_t phase_[6] = {};
 
   uint16_t frequency_randomness_ ;
   uint16_t decay_randomness_ ;

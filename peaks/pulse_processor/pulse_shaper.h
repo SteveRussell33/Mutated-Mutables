@@ -96,7 +96,7 @@ class PulseShaper {
   uint16_t previous_num_pulses_;
   uint16_t retrig_counter_;
   
-  Pulse pulse_buffer_[kPulseBufferSize];
+  Pulse pulse_buffer_[kPulseBufferSize] = {};
 
   DISALLOW_COPY_AND_ASSIGN(PulseShaper);
 };

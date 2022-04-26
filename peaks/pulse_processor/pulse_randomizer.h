@@ -91,7 +91,7 @@ class PulseRandomizer {
   uint16_t num_pulses_;
   uint16_t retrig_counter_;
   
-  uint16_t delay_counter_[kTriggerPulseBufferSize];
+  uint16_t delay_counter_[kTriggerPulseBufferSize] = {};
 
   DISALLOW_COPY_AND_ASSIGN(PulseRandomizer);
 };

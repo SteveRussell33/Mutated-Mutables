@@ -159,7 +159,7 @@ class Processors {
 
   ControlMode control_mode_;
   ProcessorFunction function_;
-  uint16_t parameter_[4];
+  uint16_t parameter_[4] = {};
 
   ProcessorCallbacks callbacks_;
   static const ProcessorCallbacks callbacks_table_[PROCESSOR_FUNCTION_LAST];
