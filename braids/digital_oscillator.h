@@ -344,7 +344,7 @@ class DigitalOscillator {
   uint32_t delay_;
   uint32_t t_; // for bytebeat
 
-  int16_t parameter_[2];
+  int16_t parameter_[2] = {};
   int16_t previous_parameter_[2];
   int32_t smoothed_parameter_;
   int16_t pitch_;
